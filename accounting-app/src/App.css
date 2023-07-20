@@ -1,0 +1,263 @@
+
+
+.navbar-custom {
+  background-color: royalblue;
+  
+}
+
+/* Navbar üzerindeki başlık rengi */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: white;
+  font-weight: 900;
+}
+
+/* Navbar üzerindeki menü bağlantıları rengi */
+.navbar-custom .nav-link,
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: white;
+  font-weight: 700;
+}
+.center-horizontally {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.navbar-custom .btn-logout{
+  color: white;
+  font-weight: 900;
+  border: 2px solid white;
+}
+
+
+
+.heading {
+  margin-bottom: 2rem;
+  
+}
+
+
+.file-input-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.home-icon {
+  font-size: 45px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: royalblue;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.home-icon:hover {
+  transform: scale(1.1); 
+}
+
+
+.custom-file-input {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.main-content {
+  width: 100%;
+  height: 842px;
+  overflow: auto;
+  display: flex;
+  
+}
+
+
+.pdf-viewer {
+  width: 44.2%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+
+.info-container {
+  width: 55%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+
+.uploadButton:hover {
+  opacity: 0.8;
+}
+
+
+.submit-button {
+  margin-top: 2rem;
+  width: 20%;
+  height: 5%;
+
+}
+.text-input{
+  width: 60%;
+  height: 5%;
+  margin-top: 5%;
+  border-radius: 8px;
+  border: 1px solid rgb(187, 187, 187);
+}
+
+.text-input:hover{
+  border: 1px solid royalblue;
+}
+.text-input:focus{
+  border: 1px solid royalblue;
+}
+
+.file-input {
+  border: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  border: none;
+  font-weight: 700;
+}
+
+.file-input:focus {
+  outline: none;
+  border-color: royalblue;
+}
+
+.file-input::file-selector-button {
+  border: none;
+  background-color: royalblue;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+.submit-button{
+  border-radius: 8px;
+  border-color: royalblue;
+  background-color: royalblue;
+  color: white;
+  font-weight: 700;
+}
+
+/* Sign Up.jsx*/ 
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.signup-container form {
+  width: 20%;
+  height: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+  background-color: #F8F7F2;
+ 
+}
+
+.signup-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signup-container .input-group {
+  margin-bottom: 15px;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.signup-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-container button:hover {
+  background-color: #0056b3;
+}
+
+/*Login.jsx*/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container form {
+  width: 20%;
+  height: 40%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+  background-color: #F8F7F2;
+ 
+}
+
+.login-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container .input-group {
+  margin-bottom: 15px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
