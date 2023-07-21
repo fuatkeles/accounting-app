@@ -1,9 +1,9 @@
 import { useNavigate, Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import { auth, db } from '../../firebase'; // firebase.js dosyasını içeri aktar
-import { collection, addDoc,query, orderBy, getDocs  } from "firebase/firestore"; // Firestore işlevlerini içeri aktar
+import { auth, db } from '../../firebase'; 
+import { collection, addDoc,query, orderBy, getDocs  } from "firebase/firestore"; 
 import { FaHome } from 'react-icons/fa';
-import { Container, Row, Col, Button, InputGroup, FormControl, Table, Navbar, Nav } from 'react-bootstrap'; // react-bootstrap bileşenlerini içeri aktar
+import { Container, Row, Col, Button, InputGroup, FormControl, Table, Navbar, Nav } from 'react-bootstrap'; 
 
 import '../App.css';
 
@@ -73,7 +73,7 @@ const PdfRead = () => {
   };
 
   const handleUpload = (e) => {
-    e.preventDefault(); // Formun varsayılan davranışını engelleyin
+    e.preventDefault(); 
 
     const dataToSave = {
       name,
@@ -83,7 +83,7 @@ const PdfRead = () => {
       pdfUrl,
     };
 
-    // Firestore'a erişim için collection ve addDoc fonksiyonlarını kullanın
+    // Firestore'a erişim 
     addDoc(collection(db, "faturalar"), dataToSave)
       .then((docRef) => {
         console.log('Veriler başarıyla eklendi. Doküman ID:', docRef.id);
@@ -105,7 +105,7 @@ const PdfRead = () => {
 
   return (
     <>
-      {/* Navbar */}
+     
       <Container>
       <Navbar  className="navbar-custom" expand="lg" >
         <Container>

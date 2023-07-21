@@ -80,20 +80,20 @@ const Home = () => {
     };
   
     try {
-      // Firestore'a verileri eklemek için bir obje oluştur
+      // Firestore'a verileri ekle
       const data = {
         name: paymentName,
         amount: parseFloat(paymentAmount),
         date: paymentDate,
       };
   
-      // Firestore koleksiyonunu seç ve verileri ekleyin
+      // Firestore koleksiyonunu seç ve verileri ekle
       const collectionRef = collection(db, "yaklasan-odemeler");
       const docRef = await addDoc(collectionRef, data);
   
       console.log("Ödeme verisi Firestore'a eklendi.");
   
-      // Eklenen ödemenin Firestore'daki belirli ID'sini alıp upcomingPayments dizisine ekleyelim
+      // Eklenen ödemenin Firestore'daki belirli ID'sini alıp upcomingPayments dizisine ekle
       setUpcomingPayments([...upcomingPayments, { ...newPayment, id: docRef.id }]);
   
       // Verileri sıfırla
@@ -134,7 +134,7 @@ const Home = () => {
       localStorage.setItem('income', newIncome.toString());
   
       try {
-        // Firestore'a verileri eklemek için bir obje oluştur
+        // Firestore'a verileri ekle
         const data = {
           gelir: newIncome,
           gider: expenses,
@@ -167,13 +167,13 @@ const Home = () => {
   };
   const handleLogout = () => {
     // Kullanıcıyı çıkış yaparak anasayfaya yönlendir
-    // Burada kullanıcı oturumunu sonlandırma kodlarını ekleyebilirsiniz, ancak bu örnekte sadece anasayfaya yönlendiriyoruz.
+    
     navigate('/login');
   };
 
   return (
     <Container>
-      {/* Navbar */}
+      
       <Navbar className='navbar-custom' expand="lg">
         <Container>
           <Navbar.Brand href="#">Accountancy App</Navbar.Brand>
@@ -240,7 +240,7 @@ const Home = () => {
           )}
         </Col>
         <Col md="5">
-          {/* Gider ve Bakiye tablosunu göster */}
+          {/* Gider ve Bakiye tablosu */}
           <div>
             <h3>Income and Balance</h3>
             <Table striped bordered>

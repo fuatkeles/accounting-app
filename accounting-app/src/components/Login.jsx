@@ -22,8 +22,8 @@ const Login = ({ setIsAuthenticated }) => {
         const user = userCredential.user;
         console.log(user);
         setLoading(false);
-        setIsAuthenticated(true); // Kullanıcı girişi başarılıysa isAuthenticated durumunu true yapalım
-        navigate('/'); // Ardından ana sayfaya yönlendirelim
+        setIsAuthenticated(true); // Kullanıcı girişi başarılıysa isAuthenticated true 
+        navigate('/'); // Ana sayfaya yönlendir
       })
       .catch((error) => {
         console.log(error);
